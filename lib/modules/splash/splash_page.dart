@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+import 'package:payflow/shared/themes/app_images.dart';
+import 'package:payflow/shared/themes/appcolors.dart';
+
+class SplashPage extends StatelessWidget {
+  const SplashPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.background,
+      body: Stack(
+        children: [
+          Center(
+              child: Image.asset(
+            AppImages.union,
+            width: 260,
+            height: 474,
+          )),
+          Center(
+              child: Image.asset(
+            AppImages.logoFull,
+            width: 170,
+            height: 155,
+          )),
+        ],
+      ),
+    );
+  }
+}
