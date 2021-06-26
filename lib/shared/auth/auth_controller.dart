@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:payflow/modules/home/home_page.dart';
-import 'package:payflow/modules/login.dart/login_page.dart';
 import 'package:payflow/shared/modules/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
