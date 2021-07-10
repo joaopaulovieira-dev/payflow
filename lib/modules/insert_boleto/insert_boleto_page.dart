@@ -23,7 +23,9 @@ class _InsertBoletoPageState extends State<InsertBoletoPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    if (widget.barcode != null) {
+      barcodeInputTextController.text = widget.barcode!;
+    }
     super.initState();
   }
 
@@ -64,16 +66,19 @@ class _InsertBoletoPageState extends State<InsertBoletoPage> {
                     onChanged: (value) {},
                   ),
                   InputTextWidget(
+                    controller: dueDateInputTextController,
                     label: "Vencimento",
                     icon: FontAwesomeIcons.timesCircle,
                     onChanged: (value) {},
                   ),
                   InputTextWidget(
+                    controller: moneyInputTextController,
                     label: "Valor",
                     icon: FontAwesomeIcons.wallet,
                     onChanged: (value) {},
                   ),
                   InputTextWidget(
+                    controller: barcodeInputTextController,
                     label: "Código",
                     icon: FontAwesomeIcons.barcode,
                     onChanged: (value) {},
