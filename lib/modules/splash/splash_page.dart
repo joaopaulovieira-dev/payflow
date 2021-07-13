@@ -26,12 +26,12 @@ class SplashPage extends StatelessWidget {
             width: 170,
             height: 155,
           )),
-          Align(
-            alignment: Alignment(0.0, 0.35),
-            child: CircularProgressIndicator(
-              color: AppColors.primary,
-            ),
-          ),
+          // Align(
+          //   alignment: Alignment(0.0, 0.35),
+          //   child: CircularProgressIndicator(
+          //     color: AppColors.primary,
+          //   ),
+          // ),
         ],
       ),
     );
